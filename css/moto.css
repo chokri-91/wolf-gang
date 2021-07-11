@@ -1,0 +1,225 @@
+/***********style géneral*************/
+html{
+	font-size: 62.5%;
+}
+@font-face{
+	font-family: Bodega Sans;
+	src:url(../fonts/BodegaSans_Black.ttf);
+}
+body{
+	background-image: url("../img/bg_body.svg");
+	background-color: #444444;
+	font-size: 1.6rem;
+}
+/***********header*************/
+header{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+50,2989d8+50,333333+50 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ffffff 50%, #2989d8 50%, #333333 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ffffff 50%,#2989d8 50%,#333333 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ffffff 50%,#2989d8 50%,#333333 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+}
+header nav{
+	float: right;
+	font-family: Bodega Sans;
+}
+
+header nav a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 2.5rem;
+	margin-top: 1%;
+	padding-bottom: 5%;
+}
+
+
+/***********main************/
+main, .container{
+	max-width: 1500px;
+	margin:auto;
+
+}
+section{
+	margin-top: 5%;
+}
+h1{
+	font-size: 4rem;
+	color: white;
+	font-family: Bodega Sans;
+	text-align:center;
+}
+h2{
+	font-size: 3rem;
+	color: white;
+	border: 2px solid #333333;
+	border-bottom: none;
+	padding: 2%;
+	font-family: Bodega Sans;
+}
+article{
+	display: inline-block;
+	width: 22%;
+	background-color: white;
+	text-align: center;
+	margin-right: 4%;
+	padding: 1%;
+	box-sizing: border-box;
+}
+#art{
+	margin-right: 0%;
+}
+
+article img{
+	width: 100%;
+
+}
+article h3, article hr{
+	color: #ff9d00;
+}
+hr{
+	border: 2px solid;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+article a{
+	display: block;
+	text-decoration: none;
+	background-color: #ff9d00;
+	color: white;
+	text-align: center;
+	padding: 2%;
+	margin: 1%;
+}
+span{
+	color: #ff9d00;
+}
+video{
+	width: 100%;
+	float: right;
+}
+#section3 div{
+	display: inline-block;
+	width: 50%;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+#section3 div:nth-child(2){
+	padding-right: 4%;
+}
+
+#section3 p{
+	color: white;
+}
+
+#section3 i{
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+	padding-left: 5%;
+	font-size: 400%;
+	margin-top: 10%;
+	color: white;
+}
+
+/*********footer**********/
+footer{
+	color: white;
+	text-align: center;
+	box-shadow: 0 0 25px rgba(0,0,0, 0.2);
+	padding: 2%;
+	margin-top:10%;
+}
+footer nav a{
+	padding: 1%;
+	color: white;
+}
+footer  img{
+	width: 4%;
+}
+footer section{
+	margin-top: 5%
+}
+small a{
+	color: white;
+}
+
+/***********version tablette***********/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+body{
+	width: 90%;
+	margin: auto;
+}
+article, #art{
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: 5%;
+}
+#section3 div{
+	display: block;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+#section3 i{
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+footer{
+	margin-top: 70%;
+}
+}
+
+/***********version mobile***********/
+@media screen and (max-width: 767px){
+header{
+	background: linear-gradient(165deg,  #ffffff 50%,#2989d8 50%,#333333 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	padding-bottom: 70%; 
+}
+body{
+	max-width: 80%;
+	margin: auto;
+}
+header nav{
+	display: block;
+}
+header nav a{
+	padding: 20% 0;
+}
+article, #art{
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: 5%;
+}
+#section3 div{
+	display: block;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+#section3 i{
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+footer{
+	margin-top: 70%;
+}
+footer nav{
+	width: 70%;
+	margin: auto;
+}
+footer nav a{
+	display: inline-block;
+	width: 45%;
+	box-sizing: border-box;
+}
+}
